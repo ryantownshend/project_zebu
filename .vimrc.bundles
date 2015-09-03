@@ -10,9 +10,10 @@ Plugin 'VundleVim/Vundle.vim'
 
 " vim sensible
 Plugin 'tpope/vim-sensible'
-
+Bundle 'tpope/vim-surround'
+            
 Bundle 'altercation/vim-colors-solarized'
-
+Bundle 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

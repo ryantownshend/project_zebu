@@ -15,6 +15,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdtree'
+Bundle 'Shougo/unite.vim'
 
 
 " All of your Plugins must be added before the following line

@@ -15,6 +15,11 @@ fi
 # install vundle
 git clone https://github.com/VundleVim/Vundle.vim.git $bundle_path/Vundle.vim
 
+# verify ~/.project_zebu exists
+if [ ! -e "$zebu" ]; then
+    mkdir =p "$zebu"
+fi
+
 # clone the project itself
 git clone https://github.com/ryantownshend/project_zebu.git $zebu
 

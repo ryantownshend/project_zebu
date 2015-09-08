@@ -6,14 +6,14 @@
 local bundle_path="~/.vim/bundle"
 local zebu="~/.project_zebu"
 
-# place Vundle.vim in the bundles dir .vim/bundles
 
 # verify ~/.vim/bundles exists
 if [ ! -e "$bundle_path" ]; then
     mkdir -p "$bundle_path"
 fi
+
 # install vundle
-git clone https://github.com/VundleVim/Vundle.vim.git $bundle_path
+git clone https://github.com/VundleVim/Vundle.vim.git $bundle_path/Vundle.vim
 
 # clone the project itself
 git clone https://github.com/ryantownshend/project_zebu.git $zebu

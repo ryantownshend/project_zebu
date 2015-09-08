@@ -33,9 +33,16 @@ ln -s "$ZEBU/.vimrc.bundles" "$HOME/.vimrc.bundles"
 # run Vundle plugin installs
 #vim +PluginInstall +qall
 
+system_shell="$SHELL"
+export SHELL='/bin/sh'
+
 vim \
     -u "$ZEBU/.vimrc.bundles" \
     "+set nomore" \
     "+BundleInstall!" \
     "+BundleClean" \
     "+qall"
+
+export SHELL="$system_shell"
+
+echo "Success"

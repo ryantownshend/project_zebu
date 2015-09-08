@@ -3,8 +3,8 @@
 ### WARNING, work in progress, do not use
 
 # vars
-local bundle_path="~/.vim/bundle"
-local zebu="~/.project_zebu"
+bundle_path="~/.vim/bundle"
+zebu="~/.project_zebu"
 
 
 # verify ~/.vim/bundles exists

@@ -7,5 +7,5 @@ personal .vimrc project
 
 Mostly untested installation script :
 
-curl https://raw.githubusercontent.com/ryantownshend/project_zebu/master/install.sh -L -o - | sh
+	curl https://raw.githubusercontent.com/ryantownshend/project_zebu/master/install.sh -L -o - | sh
 

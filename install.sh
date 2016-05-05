@@ -29,6 +29,7 @@ git clone https://github.com/ryantownshend/project_zebu.git "$ZEBU"
 # plant the symlinks in home dir
 ln -s "$ZEBU/.vimrc" "$HOME/.vimrc"
 ln -s "$ZEBU/.vimrc.bundles" "$HOME/.vimrc.bundles"
+ln -s "$ZEBU/.alias" "$HOME/.alias"
 
 # run Vundle plugin installs
 #vim +PluginInstall +qall

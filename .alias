@@ -1,0 +1,46 @@
+eval "$(thefuck --alias)"
+alias ls="ls -G"
+alias jj="ssh jojo@dgis-iMac.local"
+alias fq="ssh dgi@filequarium"
+alias housekeeping="git add .; git commit -m'housekeeping'; git push"
+scp_to_i7() {
+  scp $1 vagrant@ryan-vsphere-i7latest.local:/home/vagrant
+}
+
+alias i7scp=scp_to_i7
+
+punt_key() {
+  MAH_KEY=`cat ~/.ssh/id_rsa.pub`
+  echo $MAH_KEY | ssh $1 "cat >> ~/.ssh/authorized_keys"
+}
+
+alias puntkey=punt_key
+
+vagrant_halt() {
+  time vagrant halt $1
+  say $1 is halted
+}
+
+vagrant_destroy() {
+  time vagrant destroy $1
+  say $1 destroyed
+}
+
+vagrant_up() {
+  time vagrant up $1
+  say $1 is up
+}
+
+vagrant_ssh() {
+  vagrant ssh $1
+}
+
+alias vhalt=vagrant_halt
+alias vdestroy=vagrant_destroy
+alias vup=vagrant_up
+alias vs="vagrant global-status"
+alias vssh="vagrant_ssh"
+
+
+
+

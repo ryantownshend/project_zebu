@@ -2,6 +2,7 @@ eval "$(thefuck --alias)"
 alias ls="ls -G"
 alias jj="ssh jojo@dgis-iMac.local"
 alias fq="ssh dgi@filequarium"
+alias pi="ssh pi@citizenryan.hopto.org"
 alias housekeeping="git add .; git commit -m'housekeeping'; git push"
 scp_to_i7() {
   scp $1 vagrant@ryan-vsphere-i7latest.local:/home/vagrant
@@ -27,6 +28,7 @@ vagrant_destroy() {
 }
 
 vagrant_up() {
+  echo -n -e "\033]0;$1 upping\007"
   time vagrant up $1
   say $1 is up
 }

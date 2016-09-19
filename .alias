@@ -31,7 +31,7 @@ vagrant_destroy() {
 
 vagrant_up() {
   term_title "$1 upping"
-  time vagrant up $1
+  time vagrant up $1;
   term_title "$1 ready"
   say $1 is ready
 }
